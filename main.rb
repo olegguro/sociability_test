@@ -1,5 +1,5 @@
-require_relative "test"
-require_relative "result_printer"
+require_relative 'lib/test'
+require_relative 'lib/result_printer'
 
 puts "Тест \"Ваш уровень общительности.\" Версия 3 (c) Oleg Guro\n\n"
 puts "Ответьте на вопросы:"
