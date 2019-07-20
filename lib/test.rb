@@ -1,5 +1,5 @@
 class Test
-  attr_accessor :points
+  attr_reader :points, :answer
 
   def initialize(questions)
     @questions = questions
@@ -28,9 +28,5 @@ class Test
       @points -= 1
     end
     @current_question += 1
-  end
-
-  def answer
-    @answer
   end
 end
