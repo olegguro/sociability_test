@@ -1,16 +1,14 @@
 class Test
-  attr_reader :points, :answer
+  attr_reader :points, :answer, :questions
 
   def initialize(questions)
-    @questions = questions
     @questions = File.readlines(questions).map(&:chomp)
-
     @points = 0
     @current_question = 0
   end
 
   def finished?
-    return @current_question >= @questions.size
+    @current_question >= @questions.size
   end
 
   def next_question

@@ -1,6 +1,6 @@
 class ResultPrinter
+  attr_reader :results
   def initialize(results)
-    @results = results
     @results = File.readlines(results).map(&:chomp)
   end
   def print_result(test)
