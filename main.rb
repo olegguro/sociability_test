@@ -15,4 +15,3 @@ until test.finished?
 end
 
 result_printer.print_result(test)
-

@@ -1,8 +1,10 @@
 class ResultPrinter
   attr_reader :results
+
   def initialize(results)
     @results = File.readlines(results).map(&:chomp)
   end
+
   def print_result(test)
     puts "\n\nРезультат теста (всего баллов - #{test.points}):"
 
